@@ -1,0 +1,152 @@
+
+        /*========== LOGO ==========*/
+
+        .logo{
+
+            display:flex;
+            align-items:center;
+            gap:15px;
+        }
+
+        .logo img{
+            width:60px;
+        }
+
+        .logo h2{
+            font-size:30px;
+            color:var(--color-texto);
+        }
+
+        .logo span{
+            color:var(--color-principal);
+        }
+        
+        /*========== CUERPO ==========*/
+
+ .body{
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #fff5f0;
+            color: #333;
+        }
+
+        header {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #c4707d;
+        }
+
+        .contenedor {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .contenedor h2 {
+            text-align: center;
+            color: #8f5068;
+            margin-bottom: 30px;
+        }
+
+        .pedido {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: stretch;
+        }
+
+        .formulario, .producto {
+            background: white;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px #8f506815;
+        }
+
+        .formulario h3, .producto h3 {
+            color: #c4707d;
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin: 20px 0 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #e8c6cd;
+            border-radius: 12px;
+            font-size: 16px;
+            outline-color: #c4707d;
+        }
+
+        .enviar {
+            display: block;
+            margin: 30px auto 0;
+            padding: 14px 35px;
+            border: none;
+            border-radius: 25px;
+            background: #c4707d;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .enviar:hover {
+            background: #a95165;
+        }
+
+        .producto img {
+            display: block;
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 18px;
+            margin-bottom: 20px;
+        }
+
+        .descripcion {
+            color: #777;
+            line-height: 1.7;
+        }
+
+        .precio {
+            color: #c4707d;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .volver {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            color: #a95165;
+            text-decoration: none;
+        }
+
+        @media (max-width: 700px) {
+            .pedido {
+                grid-template-columns: 1fr;
+            }
+
+            .contenedor {
+                margin: 15px auto;
+            }
+        }
+
+
+   

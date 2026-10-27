@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizar Pedido | Pastelería VICKY</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="pedido.css">
+
+
+    <style>
+      
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pastelería VICKY</h1>
+        <p>¡Preparamos algo dulce para ti! 🎂</p>
+    </header>
+
+    <main class="contenedor">
+        <h2>Realiza tu pedido ♡</h2>
+
+        <div class="pedido">
+
+            <section class="formulario">
+                <h3>Datos de tu pedido</h3>
+
+                <form id="formPedido">
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Escribe tu nombre"
+                        required
+                    >
+
+                    <label for="cantidad">Cantidad que desea pedir</label>
+                    <input
+                        type="number"
+                        id="cantidad"
+                        min="1"
+                        step="1"
+                        value="1"
+                        required
+                    >
+
+                    <button type="submit" class="enviar">
+                        Enviar pedido ♡
+                    </button>
+                </form>
+            </section>
+
+            <section class="producto">
+                <h3>Tu producto elegido</h3>
+
+                <img id="imagenProducto" src="" alt="Producto seleccionado">
+
+                <h3 id="nombreProducto">Producto</h3>
+
+                <p id="descripcionProducto" class="descripcion"></p>
+
+                <p class="precio" id="precioProducto"></p>
+
+                <p id="totalProducto"></p>
+            </section>
+
+        </div>
+
+        <a href="VICKY.html" class="volver">
+            ← Volver a la pastelería
+        </a>
+    </main>
+
+    <script src="pedido.js"></script>
+
+
+</body>
+</html>
